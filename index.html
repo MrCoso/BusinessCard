@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Andrea Maniero — 3D &amp; Product Design</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#111111;--paper:#EDECE7;color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#EDECE7;--paper:#111111;color-scheme:dark}}
+:root[data-theme="dark"]{--ink:#EDECE7;--paper:#111111;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);background:var(--paper)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Space Mono",ui-monospace,Menlo,Consolas,monospace;font-size:14px;line-height:1.5;-webkit-text-size-adjust:100%}
+.wrap{max-width:440px;margin:0 auto;padding:20px 20px 32px}
+.bar{display:flex;justify-content:space-between;padding:0 4px 12px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;opacity:.75}
+.card{border:1.5px solid var(--ink);border-radius:20px;overflow:hidden}
+.logo{position:relative;aspect-ratio:3/2;display:grid;place-items:center;border-bottom:1.5px solid var(--ink)}
+.logo .grid{position:absolute;inset:0;width:100%;height:100%;color:var(--ink);opacity:.3}
+.logo svg{position:relative;width:60%;height:auto;display:block}
+.id{padding:22px 20px;border-bottom:1.5px solid var(--ink)}
+h1{margin:0;font-size:clamp(34px,11vw,48px);line-height:.98;letter-spacing:-.04em;text-transform:uppercase;font-weight:700}
+.role{margin:14px 0 0;font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+.lead{margin:12px 0 0;max-width:34ch}
+.sec{padding:16px 20px;border-bottom:1.5px solid var(--ink)}
+.label{margin:0 0 10px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;opacity:.75}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{display:inline-flex;align-items:center;min-height:36px;border:1.5px solid var(--ink);border-radius:999px;padding:4px 14px;font-size:13px}
+button.chip{font-family:inherit;color:inherit;background:transparent;cursor:pointer;line-height:inherit}
+.chip[aria-expanded]::after{content:"+";margin-left:8px;font-weight:700}
+.chip[aria-expanded="true"]{background:var(--ink);color:var(--paper)}
+.chip[aria-expanded="true"]::after{content:"−"}
+.panel{margin-top:16px}
+.panel[hidden]{display:none}
+.panel .label{margin-bottom:6px}
+.panel ul{list-style:none;margin:0;padding:0}
+.panel li{display:flex;gap:10px;padding:5px 0}
+.panel li::before{content:"+";font-weight:700;flex:none}
+.links a{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:54px;padding:8px 20px;color:inherit;text-decoration:none;border-bottom:1.5px solid var(--ink)}
+.links a:last-child{border-bottom:0}
+.links .k{font-size:12px;letter-spacing:.12em;text-transform:uppercase;opacity:.75;flex:none}
+.links .v{min-width:0;overflow-wrap:anywhere;text-align:right;font-weight:700}
+.links a:active,.links a:focus-visible{background:var(--ink);color:var(--paper);outline:0}
+.links a:active .k,.links a:focus-visible .k{opacity:1}
+@media (hover:hover){.links a:hover{background:var(--ink);color:var(--paper)}.links a:hover .k{opacity:1}}
+.foot{display:flex;align-items:center;gap:10px;padding:14px 20px;border-top:1.5px solid var(--ink);font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--ink);animation:blink 1.6s steps(2,start) infinite}
+@keyframes blink{50%{opacity:.15}}
+@media (prefers-reduced-motion:reduce){.dot{animation:none}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="bar"><span>ID / 001</span><span>Italia</span></div>
+  <article class="card">
+    <div class="logo">
+      <svg class="grid" aria-hidden="true"><defs><pattern id="plus" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M12 8v8M8 12h8" fill="none" stroke="currentColor" stroke-width="1.5"/></pattern></defs><rect width="100%" height="100%" fill="url(#plus)"/></svg>
+      <svg viewBox="731 338 1111 772" role="img" aria-label="Logo di Andrea Maniero" fill="none" stroke="currentColor" stroke-width="56" stroke-linecap="round" stroke-linejoin="round" style="color:var(--ink)">
+        <path d="M1092 411A84 84 0 0 0 1033 386H863A84 84 0 0 0 779 470V978A84 84 0 0 0 863 1062H1203A84 84 0 0 0 1287 978V640A84 84 0 0 0 1203 555H1033A84 84 0 0 0 948 640V809A84 84 0 0 0 1033 893H1540A84 84 0 0 0 1624 809V640A84 84 0 0 0 1540 555H1371A84 84 0 0 1 1371 386H1710A84 84 0 0 1 1794 470V978A84 84 0 0 1 1710 1062H1540A84 84 0 0 1 1481 1037"/>
+      </svg>
+    </div>
+    <div class="id">
+      <h1>Andrea<br>Maniero</h1>
+      <p class="role">3D Artist → Future Product Designer</p>
+      <p class="lead">Dal digitale al prodotto finito. Metto l’esperienza di grafico 3D e le conoscenze di video production al servizio del product design.</p>
+    </div>
+    <div class="sec">
+      <p class="label">Competenze</p>
+      <div class="chips"><button class="chip" type="button" aria-expanded="false" aria-controls="p-3d">Grafica 3D</button><button class="chip" type="button" aria-expanded="false" aria-controls="p-stampa">Stampa 3D</button><button class="chip" type="button" aria-expanded="false" aria-controls="p-video">Video Production</button><span class="chip">Problem Solving</span></div>
+      <div class="panel" id="p-3d" hidden><p class="label">Grafica 3D</p><ul><li>Modellazione 3D</li><li>Rendering</li><li>Animazione</li><li>VFX</li></ul></div>
+      <div class="panel" id="p-stampa" hidden><p class="label">Stampa 3D</p><ul><li>FDM</li><li>Resina</li><li>CAD</li></ul></div>
+      <div class="panel" id="p-video" hidden><p class="label">Video Production</p><ul><li>Post-produzione</li><li>Attrezzature video</li><li>Luci e DMX</li><li>Tracking e motion control</li></ul></div>
+    </div>
+    <nav class="links" aria-label="Contatti">
+      <a href="mailto:AndreaFM@outlook.it"><span class="k">Email</span><span class="v">AndreaFM@outlook.it</span></a>
+      <a href="tel:+393896471318"><span class="k">Telefono</span><span class="v">+39 389 647 1318</span></a>
+      <a href="https://www.artstation.com/c0s0" target="_blank" rel="noopener"><span class="k">Portfolio</span><span class="v">artstation.com/c0s0 ↗</span></a>
+      <a href="https://www.linkedin.com/in/andrea-maniero" target="_blank" rel="noopener"><span class="k">LinkedIn</span><span class="v">linkedin.com/in/andrea-maniero ↗</span></a>
+    </nav>
+    <div class="foot"><span class="dot"></span><span>Portfolio in costruzione</span></div>
+  </article>
+</main>
+<script>
+(function(){
+  var btns=document.querySelectorAll('button.chip[aria-controls]');
+  function setState(b,open){
+    b.setAttribute('aria-expanded',open?'true':'false');
+    document.getElementById(b.getAttribute('aria-controls')).hidden=!open;
+  }
+  btns.forEach(function(b){
+    b.addEventListener('click',function(){
+      var wasOpen=b.getAttribute('aria-expanded')==='true';
+      btns.forEach(function(x){setState(x,false)});
+      if(!wasOpen){setState(b,true)}
+    });
+  });
+})();
+</script>
+</body>
+</html>
